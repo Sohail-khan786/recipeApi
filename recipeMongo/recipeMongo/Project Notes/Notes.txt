@@ -1,0 +1,9 @@
+*************************** Project 1 : MongoDb with spring boot -> API for recipe project ******************************************
+
+@Document(Collection = "<collectionName>") annotation on entity class
+
+the repository class extends mongoRepository  and not jpaRepository
+
+mongoDB application properties file are different
+
+***********************************************************************************************************************************
