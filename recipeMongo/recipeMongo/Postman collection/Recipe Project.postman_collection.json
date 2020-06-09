@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "91ddca57-bc87-4463-845e-8fc6f3e5dd9f",
+		"name": "Recipe Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9003/getAllRecipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9003/getAllRecipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"getAllRecipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9003/addRecipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"name\": \"Butter Pav Bhaji\",\r\n        \"price\": \"100\",\r\n        \"indgredients\": [\r\n        \t\"butter\",\r\n            \"Pav Bhaji Masala\",\r\n            \"coconut\",\r\n            \"green chilli\"\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9003/addRecipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"addRecipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9003/updateRecipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"8d272c76-c067-4c14-a470-0daea1ac8e4d\",\r\n        \"name\": \"Butter Extra Pav Bhaji\",\r\n        \"price\": \"100\",\r\n        \"indgredients\": [\r\n            \"butter\",\r\n            \"Pav Bhaji Masala\",\r\n            \"coconut\",\r\n            \"green chilli\"\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9003/updateRecipe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"updateRecipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9003/getRecipeById/8d272c76-c067-4c14-a470-0daea1ac8e4d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9003/getRecipeById/8d272c76-c067-4c14-a470-0daea1ac8e4d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"getRecipeById",
+						"8d272c76-c067-4c14-a470-0daea1ac8e4d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9003/deleteRecipe/8d272c76-c067-4c14-a470-0daea1ac8e4d",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9003/deleteRecipe/8d272c76-c067-4c14-a470-0daea1ac8e4d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"deleteRecipe",
+						"8d272c76-c067-4c14-a470-0daea1ac8e4d"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
